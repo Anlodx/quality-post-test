@@ -1,0 +1,148 @@
+:root {
+    --main: #FFFFFF;
+    --link: #98be3c;
+    --high: #ed1c24;
+    --hdark: #800000;
+    --black: #000000;
+    --dark: #333333;
+    --orange: #F97322;
+    --white: #FFFFFF;
+    --yellow: #FCF002;
+    --red: #B22123;
+    --green: #5FCA1C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+    background-color: var(--high);
+}
+.main-container .logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.main-container .logo-container .logo-img{
+    width: 300;
+    height: auto;
+}
+.main-container .logo-container .logo-img img{
+    object-fit: contain;
+}
+
+
+.main-container h1{
+    font-size: 18px;
+    color: var(--orange);
+}
+
+.main-container .whoami{
+    color: var(--high);
+}
+
+.main-container #data-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-container #data-form label{
+    color: var(--dark);
+}
+
+.main-container #data-form input[type="text"],
+.main-container #data-form input[type="number"]{
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    text-align: center;
+}
+
+.main-container .buttons input[type="submit"],
+.main-container .buttons button
+{
+    padding: 3px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+
+    background-color: var(--dark);
+    color: var(--white);
+
+}
+
+.main-container .buttons input[type="submit"]:hover,
+.main-container .buttons button:hover{
+    background-color: var(--orange);
+    color:var(--white);
+    border: none;
+    
+}
+
+.main-container #message{
+    width: 100%;
+    padding: 2px;
+    background-color: var(--green);
+    color: var(--dark);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
+.main-container #list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:5px;
+}
+
+
+.main-container #list .item{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    padding: 5px;
+    text-align: center;
+    gap:10px;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+.main-container #list .item span{
+    font-size: 15px;
+}
+
+.main-container #list .item span .value{
+    font-weight: bold;
+}
+
+
